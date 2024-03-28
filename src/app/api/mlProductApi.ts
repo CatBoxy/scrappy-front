@@ -11,7 +11,7 @@ interface Product {
 }
 
 const mlProductApi = {
-  apiUrl: `${process.env.API_URL}/api/mlProducts`,
+  apiUrl: `${process.env.NEXT_PUBLIC_API_URL}/api/mlProducts`,
 
   list: async (): Promise<Array<Product>> => {
     try {
